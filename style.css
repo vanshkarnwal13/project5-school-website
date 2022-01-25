@@ -1,0 +1,442 @@
+body {
+    background-color: black;
+    margin:0;
+}
+
+/* #logo{
+    padding:5px 5px;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    display: block;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+p.heading{
+    display: block;
+    font-size: 13pt;
+    color: #337AB7;
+    text-align: center;
+    padding: 0;
+}
+
+p.text{
+    display: block;
+    font-size: 12pt;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+
+.map img.map {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.map{
+    margin: 0;
+    padding: 0;
+    border: 2px #333;
+    background-color: #333;
+    outline-style: outset;
+}
+
+.menu{
+    position: fixed;
+    justify-content:center;
+    background-color: #333;
+    width: 100%;
+    display: inline-block;
+    z-index:100;
+}
+
+.menu li {
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.menu li a.logo {
+    display: flex;
+    padding: 9px 12px 0 0;
+    /* padding: 0 10px 0 0;
+    margin: 10px; */
+}
+
+.menu li a.active {
+    background-color: #337AB7;
+}
+
+p.sec{
+    background-color: #337AB7;
+}
+
+.menu li a:hover{
+    background-color: #111;
+}
+
+.map:hover {
+    background-color: #111;
+}
+
+p.text:hover {
+    background-color: #111;
+}
+
+.menu li.dropdown {
+    display: block;
+    overflow: hidden;
+  }
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    background-color: #333;
+    display: block;
+    width:250px;
+  }
+.dropdown-content a:hover {background-color: #111}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    width:100px;
+  }
+
+.leftcolumn {   
+    float: left;
+    position:relative;
+    width: 25%;
+    background-color: black;
+    padding: 0 10px 0 10px; 
+}
+
+.midcolumn {
+    float: left;
+    position:relative;
+    width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: black;
+    padding: 0 10px 0 10px; 
+}
+
+.rightcolumn {
+    float: left;
+    position:relative;
+    width: 25%;
+    background-color: black;
+    padding: 0 10px 0 10px; 
+}
+
+@media screen and (max-width: 500px) {
+.menu{
+    position:relative;
+}
+.menu li {
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+    padding:0;
+    position:relative;
+    float:center;
+    }
+.menu li.dropdown{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+.menu li.dropdown:hover .dropdown-content {
+    display: flex; 
+    align-items: center;
+    justify-content: center
+    }
+    
+}
+
+ 
+@media screen and (max-width: 800px) {
+    .leftcolumn, .midcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0 0 10px 0;
+      position: relative;
+    }
+    .fac_card, .princ_card {   
+        width: 70% !important;
+        position: relative;
+        display: block;
+        margin: 10px; 
+    }
+    .faculty-bck{
+        padding: 0;
+    }
+}
+
+.card{
+    margin: auto;
+    position: sticky;
+    margin: 0;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #111;
+    width:100%;
+    height:750px;
+    font-size: 12pt;
+    color: white;
+    text-align: justify;
+    padding: 20px;
+}
+
+.card p.heading{
+    display: inline-block;
+    font-size: 30pt;
+    color: #337AB7;
+    text-align: center;
+    padding: 0;
+}
+
+#timetable, #result{
+    background-color: #333;
+    margin: 0 !important;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+#timetable:hoverr{
+    background-color: #111;
+}
+.table{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2%;
+    width: 60%;
+    color: black;
+    font-size: 15pt;
+    background-color: #b4b4b4;
+    text-align: center;
+    border-color: #111;
+
+}
+th{
+    background-color: #838383;
+}
+.forms{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 60%;
+    color: black;
+    font-size: 1.5rem;
+    background-color: #b4b4b4;
+    border-color: #111;
+    border-radius: 5%;
+    border-width: 2%;
+}
+
+.secc{
+    margin: 0 !important;
+    background-color: #337AB7;
+}
+
+
+
+.submit-btn {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 19px;
+    background: #337AB7;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+
+  }
+
+  .submit-btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }
+
+  .submit{
+      text-align: center;
+
+  }
+
+.princ_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+
+    position: relative;
+    border-radius: 5%;
+    background-color: #818181;
+    padding: 3% 2% 3% 2%;
+    font-size: 30px;
+    display: inline-block;
+  }
+.fac_card{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20%;
+    margin-right:2% ;
+    position: relative;
+
+    background-color: #818181;
+    border-radius: 5%;
+    padding: 2%;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+
+.princ_card:hover, .fac_card:hover{
+    background-color: #b4b4b4;
+}
+
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .fac_card a,.princ_card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .faculty-bck{
+    background-color: #333
+  }
+  .faculty-bck:hover{
+      background-color: #111;
+  }
+  .faculty-sec{
+      background-color: #337AB7;
+  }
+  #principal, #pp, #pri, #high, #hs{
+      text-align: center;
+  }
+  .faculty-img{
+      border-radius: 50%;
+      height: 100px;
+      width: 5px;
+
+  }
+  .faculty-txt{
+      color: black;
+      font-size: 20pt;
+  }
+
+    #halloffame{
+    height: 100%; 
+    position: relative;
+    overflow: hidden
+    }
+  #halloffame > * {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden
+    }
+    #halloffame > *:first-child {
+        animation: 12s autoplay1 infinite ease-in-out}
+      @keyframes autoplay1 {
+        0% {margin-top: 700px}
+        5% {margin-top: 0px}
+        25% {margin-top: 0px}
+        30% {margin-top: -700px}
+        50% {margin-top: -700px}
+        55% {margin-top: -1400px}
+        75% {margin-top: -1400px}
+        80% {margin-top: -2100px}
+        95% {margin-top: -2100px}
+        100% {margin-top: -2800px}
+      }
+
+#clubs {
+        height: 100%; 
+        position: relative;
+        display: flex;
+    
+        overflow-x:auto ;
+        width: 100%;
+}
+#clubs > * {
+        height: 100%;
+        width: 25%;
+    
+        box-sizing: border-box;
+        overflow: hidden
+    }
+#clubs  > *:first-child {
+    animation: 6s autoplay3 infinite ease-in-out}
+    @keyframes autoplay3 {
+    0% {margin-left: 2100px}
+    25% {margin-left: 0px}
+    75% {margin-left: 0px}
+    100% {margin-left: -2100px}
+}
+
+
+
+.eop:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  

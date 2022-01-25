@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu" class="menu">
+    <ul>
+        <li class="dropdown"><a href="index.html">Home</a>
+            <div class="dropdown-content">
+                <a href="index.html#about-us">About Us</a>
+                <a href="index.html#image-map">Campus</a>
+            </div>
+        </li>
+
+        <li class="dropdown"><a href="courses.html">Schools</a>
+            <div class="dropdown-content">
+                <a href="courses.html#pp">Pre-Primary Section</a>
+                <a href="courses.html#pri">Primary Section</a>
+                <a href="courses.html#high">High Section</a>
+                <a href="courses.html#hs">Higher Secondary Section</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="clubs.html">Cultural Activities</a>
+            <div class="dropdown-content">
+                <a href="clubs.html#events">Upcoming Events</a>
+                <a href="clubs.html#clubs">Clubs and Chapters</a>
+                <a href="clubs.html#glory">Hall of Fame</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="faculty.html">Faculty Details</a>
+            <div class="dropdown-content">
+                <a href="faculty.html#pp">Pre-Primary Section</a>
+                <a href="faculty.html#pri">Primary Section</a>
+                <a href="faculty.html#high">High Section</a>
+                <a href="faculty.html#hs">Higher Secondary Section</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="results.html">Student Achievements</a>
+            <div class="dropdown-content">
+                <a href="results.html#comp">Competitive Exams</a>
+                <a href="results.html#boards">Boards</a>
+                <a href="results.html#sports">Sports</a>
+                <a href="clubs.html#glory">Others</a>
+            </div>
+        </li>
+        <li class="dropdown"><a href="coe.html" class="active">Exams</a>
+            <div class="dropdown-content">
+              <a href="coe.html#timetable">Timetable</a>
+              <a href="result.html#result">Result</a>
+            </div>
+        </li>
+        <li style="float:right" id="logo"><a class="logo" href="index.html"><img src="images/logo_hv_edited.jpg" width=20" height="30" alt="HVM logo" ></a></li>
+    </ul>   
+    </div>
+    <br><br><br><br>
+    <div id="result">
+        <p class="sec">EXAM<br>RESULTS</p>
+        <div class="card" style="margin-left: 20%; margin-right: 20%; height:auto; padding: 0 10px 50px 10px; position: relative; border-top: 10px; border-radius: 2px; border-color: #337AB7;">
+            <form action="coe.html#timetablel" autocomplete="on">
+                
+                <p class="secc" style="margin-left: 0;margin-right: 0"></p>
+                <h1>Login to view your results</h1>
+                <div style="display: flex; width: 100%; margin-bottom: 15px;">
+                <input style="width: 100%; padding: 6px 12px; outline: none; height:31px;" type="text" placeholder="Username" id="uname" name="uname" maxlength="20">
+                <i style="padding: 8px; background: #2980B9; color: white; min-width: 40px; text-align: center;font-size: 15px;" class="fa fa-user icon"></i>
+                </div>
+                <div style="display: flex; width: 100%; margin-bottom: 15px;">
+                <input style="width: 100%; padding: 6px 12px; outline: none; height: 31px;" type="password" id="passwd" name="passwd" placeholder="Password">
+                <i id="psd" style="padding: 8px; background: #2980B9; color: white; min-width: 40px; text-align: center; font-size: 15px; cursor: pointer;" class="fa fa-eye-slash"></i>
+                </div>
+                <div style="display: flex; width: 100%; margin-bottom: 15px;">
+                <input style="width: 100%; padding: 6px 12px; outline: none; height: 31px;" type="email" id="mail" name="mail" placeholder="Email Address">
+                <i id="mail" style="padding: 8px; background: #2980B9; color: white; min-width: 40px; text-align: center; font-size: 15px; cursor: pointer;" class="fa fa-envelope"></i>
+                </div>
+                <div style="display: flex; width: 100%; margin-bottom: 15px;">
+                <input style="width: 100%; padding: 6px 12px; outline: none; height: 31px;" type="number" id="phone" name="phone" placeholder="Phone Number">
+                <i id="mail" style="padding: 8px; background: #2980B9; color: white; min-width: 40px; text-align: center; font-size: 15px; cursor: pointer;" class="fa fa-phone"></i>
+                </div>
+                <div style="display: flex; width: 100%; margin-bottom: 15px;">
+                <input style="width: 100%; padding: 6px 12px; outline: none; height: 31px;" type="date" id="dob" name="dob" value="2000-01-01" max="2003-12-31" placeholder="Date of Birth">
+                <i id="mail" style="padding: 8px; background: #2980B9; color: white; min-width: 40px; text-align: center; font-size: 15px; cursor: pointer;" class="fa fa-calendar"></i>
+                </div>
+                <br><br><br>
+                <div class="submit">
+                    <input class="submit-btn" type="submit" name="Submit" value="Submit">
+                    <input class="submit-btn" type="reset" name="Submit2" value="Reset">
+                </div>
+                  
+                </form>
+        <!-- <form action="#timetable" autocomplete="on" >
+            <br><br>
+            <label for="name" style="padding-left: 5%; font-size: 2rem;">Name:</label>
+            <input type="text" style="width: 65%;margin-left: 10%;" id="fname" name="fname"><br><br>
+            
+            <label for="dob"  style="padding-left: 5%; font-size: 2rem;"> Date of Birth:</label>
+            <input type="date" style="width: 65%; margin-left: 2%;" id="dob" name="dob" value="2000-01-01" max="2003-12-31"><br><br>
+            <label for="e-mail" style="padding-left: 5%; font-size: 2rem;">E-mail:</label>
+            <input type="email" style="width: 65%; margin-left: 9%;" placeholder="Email" style="width: 74%;"><br><br>
+            <label for="password" style="padding-left: 5%; font-size: 2rem;"> Password:</label>
+            <input type="password" style="width: 65%; margin-left: 6%;"placeholder="Password" pattern=".{8,}" title="Eight or more characters"> <br><br>
+            <label for="phone" style="padding-left: 5%; font-size: 2rem;">Phone no:</label>
+            <input type="text"  style="width: 65%; margin-left: 6%;" id="fname" name="fname"><br><br>
+
+
+            
+        <label for="comment" style="padding-left: 5%; font-size: 2rem;">Comments:</label>
+        <textarea style="margin-left: 5%;" rows="5" cols="97">
+
+        </textarea>
+        <div class="submit">
+            <input class="submit-btn" type="submit" name="Submit" value="Submit">
+            <input class="submit-btn" type="reset" name="Submit2" value="Reset">
+        </div>
+            </form> -->
+    </div>
+    </div>
+    <div id="eop" class="map"><p class="sec"> </p></div>
+    <div>
+        <center><img src="images/footer_logo.jpg" width=66% height="150" alt="footer"></center>
+    </div>
+</body>
+</html>
